@@ -1,0 +1,27 @@
+body {
+    background-color: blue;
+    
+    margin: 0;
+}
+
+
+.danh-sach-muc {
+   margin:0;
+    padding: 20px;
+    background-color:red;
+}
+
+
+.banner {
+    width: 50%;
+    margin: 50% auto;
+    background-color:green;
+    
+    
+}
+
+.banner-img {
+    width: 50%;
+    border-radius: 50px;
+}
+
