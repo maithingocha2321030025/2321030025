@@ -11,17 +11,30 @@ body {
     background-color:red;
 }
 
+main {
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center;     /* Căn giữa theo chiều dọc */
+  min-height: 80vh;        /* Tạo chiều cao để có không gian căn giữa */
+}
 
+/* 2. Ô màu đen ở giữa */
 .banner {
-    width: 50%;
-    margin: 50% auto;
-    background-color:green;
-    
-    
+  width: 60%;               /* Độ rộng khối (tùy chỉnh từ 50% - 70%) */
+  height: 360px;            /* Chiều cao khối màu đen */
+  background-color: #222;   /* Màu đen xám */
+  border-radius: 12px;       /* Bo tròn góc */
 }
 
-.banner-img {
-    width: 50%;
-    border-radius: 50px;
+
+.the-loai {
+    width: 90%;
+    
+    margin: 10px auto;
 }
 
+.danh-sach-phim {
+    display: flex;
+    justify-content: space-between;
+
+}
