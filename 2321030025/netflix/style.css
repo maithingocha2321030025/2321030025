@@ -90,3 +90,16 @@ img{
         border-radius: 50%;
     }
 }
+
+footer {
+    
+    color: #777;
+    padding: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+}
