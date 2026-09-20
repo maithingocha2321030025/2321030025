@@ -1,0 +1,45 @@
+.container{
+    display:flex;
+}
+.ben-trai{
+    width:15%;
+    height:100vh;
+    background-color: aqua;
+}
+.giua{
+    width:70%;
+    background-color: rgb(218, 82, 216);
+}
+.giua-1{
+    display:flex;
+    height: 40%;
+    background-color: beige;
+}
+.mot{
+    width:50%;
+    background-color: black;
+}
+.hai{
+    width:50%;
+    background-color: blanchedalmond;
+}
+.giua-2{
+display:flex;
+height:60%;
+}
+.tra-dao{
+    width:33%;
+    background-color:brown;
+}
+.tra-chanh{
+    width:34%;
+    background-color:green;
+}
+.tra-quat{
+    width:33%;
+    background-color:pink;
+}
+.ben-phai{
+    width:15%;
+    background-color: aqua;
+}
