@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        document.writeln("Hello world 1 !");
+
+        var tenSinhVien = "Ngoc Ha";
+        var tuoi = 21;
+        document.writeln(tenSinhVien + "<br>" + tuoi + "<br>");
+         
+        var soThuNhat = 10 ;
+        var soThuHai = 5 ;
+        var ketQua = soThuNhat + soThuHai;
+        document.writeln("ket qua la" + ketQua + "<br>");
+        var ketQua = soThuNhat - soThuHai;
+        document.writeln("ket qua la" + ketQua + "<br>");
+        var ketQua = soThuNhat * soThuHai;
+        document.writeln("ket qua la" + ketQua + "<br>");
+        var ketQua = soThuNhat / soThuHai;
+        document.writeln("ket qua la" + ketQua + "<br>");
+        var ketQua = soThuNhat % soThuHai;
+        document.writeln("ket qua la" + ketQua + "<br>");
+    
+        
+        document.writeln(++soThuNhat + "<br>");
+        document.writeln(--soThuNhat + "<br>");
+
+        soThuNhat+=soThuHai;
+        document.writeln(soThuNhat + "<br>");
+        soThuNhat-=soThuHai;
+        document.writeln(soThuNhat + "<br>");
+        soThuNhat*=soThuHai;
+        document.writeln(soThuNhat + "<br>");
+        soThuNhat/=soThuHai;
+        document.writeln(soThuNhat + "<br>");
+        soThuNhat%=soThuHai;
+        document.writeln(soThuNhat + "<br>");
+
+        var a = "10";
+        var b = "5";
+        var c = "5.5";
+        var tong = parseInt(a) + parseInt(b);
+        var tong = parseFloat(a) + parseFloat(c);
+        document.writeln(tong);
+
+        //String:chuỗi
+        //Number:số
+        //Boolean:true/false
+
+        // String
+         document.writeln("<br>");
+         // kiểm tra độ dài length 
+         document.writeln("<br>");
+         document.writeln(tenSinhVien.length + "<br>");
+         // kiểm tra vị trí indexOf
+         document.writeln("<br>");
+         document.writeln(tenSinhVien.indexOf("H") + "<br>");
+         // kiểm tra chữ từ có trong chuỗi ko : includes
+            document.writeln("<br>");
+            document.writeln(tenSinhVien.includes("V") + "<br>");
+            //thay đổi chữ :replace
+            document.writeln("<br>");
+            document.writeln(tenSinhVien.replace("Ngoc","Thanh") + "<br>");
+            // chữ bắt đầu :startswith
+            document.writeln("<br>");
+            document.writeln(tenSinhVien.startsWith("Ngoc") + "<br>");
+            // in hoa tất cả :touppercase
+            document.writeln("<br>");
+            document.writeln(tenSinhVien.toUpperCase() + "<br>");
+            // in thường tất cả :tolowercase
+            document.writeln("<br>");
+            document.writeln(tenSinhVien.toLowerCase() + "<br>");
+
+
+        // Date
+          var homNay=new Date();
+          document.writeln("<br>");
+          document.writeln(homNay);
+
+          var ngay=new Date("10/08/2026");
+            document.writeln("<br>");
+            document.writeln(ngay);
+
+        var nam = homNay.getFullYear();
+    document.writeln("<br>");
+    document.writeln(nam);
+    var thang = homNay.getMonth() + 1; // tháng bắt đầu từ 0 nên cần cộng thêm 1
+    document.writeln("<br>");
+    document.writeln(thang);
+
+    // lấy ngày
+    var ngay = homNay.getDate();
+    document.writeln("<br>");
+    document.writeln(ngay);
+
+    // lấy thứ
+    var thu = homNay.getDay() + 1; // 0: chủ nhật, 1: thứ 2, 2: thứ 3, 3: thứ 4, 4: thứ 5, 5: thứ 6, 6: thứ 7
+    document.writeln("<br>");
+    document.writeln(thu);
+
+            var namSinhHa = nam-tuoi;
+    document.writeln("<br>");
+    document.writeln("Năm sinh của Hà là: " + namSinhHa);
+
+    // Mảng:arry
+    //lấy giá trị từ mảng 
+    var mangSo=[1,2,3,4,5];
+    var mangTen=["Ha","Thuy","Mai","Phuong"];
+    var thongTin = [" Ha", 21, "Ha Noi", true];
+
+    document.writeln("<br>");
+    document.writeln(mangSo[2]);
+    document.writeln("<br>");
+    document.writeln(mangTen[2]);
+    document.writeln("<br>");
+    document.writeln(thongTin[2]);
+
+    // kiểm tra độ dài 
+    document.writeln("<br>");
+    document.writeln(mangSo.length);
+    document.writeln("<br>");
+    document.writeln(mangTen.length);
+    document.writeln("<br>");
+    document.writeln(thongTin.length);
+
+    // gộp mảng 
+    var mang=mangSo.concat(mangTen+thongTin);
+    document.writeln("<br>");
+    document.writeln(mang);
+
+    // lấy phần tử cuối trong mảng 
+    document.writeln("<br>");
+    document.writeln(mangSo.pop());
+    // thêm phần tử cuối 
+    document.writeln("<br>");
+    document.writeln(mangSo.push(6)+1);
+
+    // nối chuỗi 
+     document.writeln("<br>");
+    document.writeln(mangSo.join(" - "));
+    // đảo ngược 
+     document.writeln("<br>");
+    document.writeln(mangSo.reverse());
+
+
+    
+    
+    
+    
+    
+    
+
+
+            
+            
+
+
+        
+    </script>
+</body>
+</html>

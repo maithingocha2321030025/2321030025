@@ -248,15 +248,96 @@
     else{
         document.writeln("Điểm không hợp lệ");
     }
-
-    
-    
-
     // 0->4:F
     // 4->5:D
     // 5->7:C
     // 7->8:B
     // 8->10:A
+
+
+    //object : var name={ }
+    var thongTinSinhVien={
+        hoTen:"Ngoc Ha",
+        tuoi: 21,
+        gioiTinh: true, // true:Nam ,false:Nữ
+        diaChi: {
+            thanhPho:"Ha Noi",
+            phuong:"Dong Ngac",
+            duong:"Le Van Hien"
+        }
+
+    };
+
+    var thongTinPhim = {
+        tenPhim:"Doremon",
+        daoDien:"abc",
+        nhaSanXuat:"cong ty abc",
+        namSanXuat:1999,
+        theLoai:"Hoat hinh",
+        quocGia:"Nhat Ban",
+        dienVien:{
+            dienVienChinh:[
+                "abc","xyz","def"
+
+            ],
+                
+            dienVienPhu:[
+                "abc","xyz","def"
+            ]
+        },
+    };
+    //lấy ra tên đạo diễn phim 
+     document.writeln("<br>");
+     document.writeln(thongTinPhim.daoDien);
+     // lấy diễn viên chính
+     document.writeln("<br>");
+     document.writeln(thongTinPhim.dienVien.dienVienChinh);
+     // lấy tên 1 diễn viên chính
+     document.writeln("<br>");
+     document.writeln(thongTinPhim.dienVien.dienVienChinh[2]);
+
+     //switch case
+     var d=new Date();
+     var theDay=d.getDay();
+     switch (theDay){
+        case 5:
+            document.writeln("Finally Friday"); // nếu là 5 in ra dòng này
+            break;
+        case 6:
+            document.writeln("Super Saturday");  // là 6 in ra dòng này
+            break;
+        case 0:
+            document.writeln("Sleepy Sunday");   // 0 in ra dòng này 
+            break;
+        default:
+            document.writeln("I'm looking forward to this weekend"); //nếu ko phải = 5,6,0 thì in ra dòng này
+        }
+    
+     // FOR:vòng lặp
+     for ( var index =1; index<=50; index++){
+        document.writeln("<br> Xin chào" + index +"<br>");
+     }
+
+     var danhSachSinhVien =["Thuy","Mai","Phuong","Ha"];
+    //  document.writeln("<br> Xin chào" + danhSachSinhVien[1]);
+
+     for(var i=0;i< danhSachSinhVien.length;i++){
+        document.writeln("<br>"+ i+ "<br>");
+        document.writeln("Xin chào"+danhSachSinhVien[i]);
+
+     }
+
+     if(danhSachSinhVien[i]=="Phuong"|| danhSachSinhVien[i]=="Thuy"){
+       document.writeln("xin chào"+danhSachSinhVien[i]);
+     }
+
+     
+
+
+
+     
+
+
 
 
 
